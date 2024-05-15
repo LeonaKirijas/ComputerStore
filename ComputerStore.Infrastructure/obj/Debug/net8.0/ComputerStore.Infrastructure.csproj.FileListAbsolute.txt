@@ -1,0 +1,15 @@
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\bin\Debug\net8.0\ComputerStore.Infrastructure.deps.json
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\bin\Debug\net8.0\ComputerStore.Infrastructure.dll
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\bin\Debug\net8.0\ComputerStore.Infrastructure.pdb
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\bin\Debug\net8.0\ComputerStore.Domain.dll
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\bin\Debug\net8.0\ComputerStore.Domain.pdb
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\obj\Debug\net8.0\ComputerStore.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\obj\Debug\net8.0\ComputerStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\obj\Debug\net8.0\ComputerStore.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\obj\Debug\net8.0\ComputerStore.Infrastructure.AssemblyInfo.cs
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\obj\Debug\net8.0\ComputerStore.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\obj\Debug\net8.0\Computer.06E59C20.Up2Date
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\obj\Debug\net8.0\ComputerStore.Infrastructure.dll
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\obj\Debug\net8.0\refint\ComputerStore.Infrastructure.dll
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\obj\Debug\net8.0\ComputerStore.Infrastructure.pdb
+C:\Users\Boajangles\source\repos\ComputerStore.Infrastructure\obj\Debug\net8.0\ref\ComputerStore.Infrastructure.dll

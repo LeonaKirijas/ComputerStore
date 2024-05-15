@@ -1,0 +1,11 @@
+C:\Users\Boajangles\source\repos\ComputerStore.DTOs\bin\Debug\net8.0\ComputerStore.DTOs.deps.json
+C:\Users\Boajangles\source\repos\ComputerStore.DTOs\bin\Debug\net8.0\ComputerStore.DTOs.dll
+C:\Users\Boajangles\source\repos\ComputerStore.DTOs\bin\Debug\net8.0\ComputerStore.DTOs.pdb
+C:\Users\Boajangles\source\repos\ComputerStore.DTOs\obj\Debug\net8.0\ComputerStore.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Boajangles\source\repos\ComputerStore.DTOs\obj\Debug\net8.0\ComputerStore.DTOs.AssemblyInfoInputs.cache
+C:\Users\Boajangles\source\repos\ComputerStore.DTOs\obj\Debug\net8.0\ComputerStore.DTOs.AssemblyInfo.cs
+C:\Users\Boajangles\source\repos\ComputerStore.DTOs\obj\Debug\net8.0\ComputerStore.DTOs.csproj.CoreCompileInputs.cache
+C:\Users\Boajangles\source\repos\ComputerStore.DTOs\obj\Debug\net8.0\ComputerStore.DTOs.dll
+C:\Users\Boajangles\source\repos\ComputerStore.DTOs\obj\Debug\net8.0\refint\ComputerStore.DTOs.dll
+C:\Users\Boajangles\source\repos\ComputerStore.DTOs\obj\Debug\net8.0\ComputerStore.DTOs.pdb
+C:\Users\Boajangles\source\repos\ComputerStore.DTOs\obj\Debug\net8.0\ref\ComputerStore.DTOs.dll

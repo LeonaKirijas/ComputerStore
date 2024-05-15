@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ComputerStore</name>
+    </assembly>
+    <members>
+        <member name="T:ProductsController">
+            <summary>
+            Controller for handling operations related to products.
+            </summary>
+        </member>
+        <member name="M:ProductsController.#ctor(ComputerStore.Application.Interfaces.IProductService,ComputerStore.Application.Interfaces.ICategoryService,ComputerStore.Infrastructure.Data.AppDbContext)">
+            <summary>
+            Constructs a ProductsController with dependency injection for the product service.
+            </summary>
+            <param name="productService">Service responsible for product operations.</param>
+        </member>
+        <member name="M:ProductsController.GetAllProducts">
+            <summary>
+            Retrieves all available products.
+            </summary>
+            <returns>A list of all products.</returns>
+            <response code="200">Returns the list of all products.</response>
+        </member>
+        <member name="M:ProductsController.GetProductById(System.Int32)">
+            <summary>
+            Retrieves a specific product by its unique identifier.
+            </summary>
+            <param name="id">The ID of the product to retrieve.</param>
+            <returns>The requested product if found.</returns>
+            <response code="200">Product was found and returned successfully.</response>
+            <response code="404">No product found with the specified ID.</response>
+        </member>
+        <member name="M:ProductsController.CreateProduct(ComputerStore.DTOs.ProductCreateDto)">
+            <summary>
+            Creates a new product.
+            </summary>
+            <param name="productDto">The product data to create.</param>
+            <returns>The created product and a URI to the created product.</returns>
+            <response code="201">Product was created successfully.</response>
+            <response code="400">Product data is invalid.</response>
+        </member>
+        <member name="M:ProductsController.UpdateProduct(System.Int32,ComputerStore.DTOs.ProductCreateDto)">
+            <summary>
+            Updates an existing product's information.
+            </summary>
+            <param name="id">The ID of the product to update.</param>
+            <param name="productDto">Updated product data.</param>
+            <returns>A response indicating the outcome of the operation.</returns>
+            <response code="204">Product was updated successfully.</response>
+            <response code="400">Product ID mismatch, or invalid data.</response>
+        </member>
+        <member name="M:ProductsController.ImportProducts(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Imports a list of products and creates or updates them in the database.
+            </summary>
+            <param name="file">The file containing the products to import.</param>
+            <returns>A confirmation message of successful import.</returns>
+        </member>
+        <member name="M:ProductsController.CalculateDiscount(System.Collections.Generic.List{ComputerStore.DTOs.BasketItemDto})">
+            <summary>
+            Calculates discounts for items in the basket.
+            </summary>
+            <param name="basketItems">List of items in the customer's basket.</param>
+            <returns>Total discount amount for the basket.</returns>
+        </member>
+        <member name="M:ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            Deletes a product by its identifier.
+            </summary>
+            <param name="id">The ID of the product to delete.</param>
+            <returns>A response indicating the outcome of the operation.</returns>
+            <response code="204">Product was deleted successfully.</response>
+            <response code="404">No product found with the specified ID.</response>
+        </member>
+    </members>
+</doc>

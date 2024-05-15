@@ -1,0 +1,6 @@
+@ComputerStore_HostAddress = http://localhost:5104
+
+GET {{ComputerStore_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

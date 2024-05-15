@@ -1,0 +1,98 @@
+[
+    {
+        "Name": "Intel's Core i9-9900K",
+        "Categories": ["CPU"],
+        "Price": 475.99,
+        "Quantity": 2
+    },
+    {
+        "Name": "Razer BlackWidow Keyboard",
+        "Categories": ["Keyboard", "Periphery"],
+        "Price": 89.99,
+        "Quantity": 10
+    },
+    {
+        "Name": "Logitech MX Master 3",
+        "Categories": ["Mouse", "Periphery"],
+        "Price": 99.99,
+        "Quantity": 5
+    },
+    {
+        "Name": "Samsung SSD 1TB",
+        "Categories": ["Storage", "SSD"],
+        "Price": 150.99,
+        "Quantity": 15
+    },
+    {
+        "Name": "Dell UltraSharp 32 4K USB-C Monitor",
+        "Categories": ["Monitor", "Periphery"],
+        "Price": 899.99,
+        "Quantity": 3
+    },
+    {
+        "Name": "Corsair Vengeance LPX 16GB",
+        "Categories": ["RAM", "Memory"],
+        "Price": 79.99,
+        "Quantity": 20
+    },
+    {
+        "Name": "AMD Ryzen 9 5950X",
+        "Categories": ["CPU"],
+        "Price": 799.99,
+        "Quantity": 4
+    },
+    {
+        "Name": "Asus ROG Strix Z590-E",
+        "Categories": ["Motherboard"],
+        "Price": 379.99,
+        "Quantity": 7
+    },
+    {
+        "Name": "Cooler Master MasterLiquid ML240L",
+        "Categories": ["Cooling"],
+        "Price": 69.99,
+        "Quantity": 8
+    },
+    {
+        "Name": "NVIDIA GeForce RTX 3080",
+        "Categories": ["GPU"],
+        "Price": 699.99,
+        "Quantity": 6
+    },
+    {
+        "Name": "Seagate BarraCuda 2TB",
+        "Categories": ["Storage", "HDD"],
+        "Price": 54.99,
+        "Quantity": 12
+    },
+    {
+        "Name": "Microsoft Surface Laptop 4",
+        "Categories": ["Laptop"],
+        "Price": 1299.99,
+        "Quantity": 5
+    },
+    {
+        "Name": "Apple MacBook Pro 13",
+        "Categories": ["Laptop"],
+        "Price": 1499.99,
+        "Quantity": 3
+    },
+    {
+        "Name": "HP Envy 13",
+        "Categories": ["Laptop"],
+        "Price": 899.99,
+        "Quantity": 7
+    },
+    {
+        "Name": "Logitech G502 HERO",
+        "Categories": ["Mouse", "Periphery"],
+        "Price": 49.99,
+        "Quantity": 10
+    },
+    {
+        "Name": "Razer Kraken X",
+        "Categories": ["Headset", "Periphery"],
+        "Price": 39.99,
+        "Quantity": 15
+    }
+]

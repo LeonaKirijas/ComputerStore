@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Boajangles\\source\\repos\\ComputerStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F9BB6-3105-4D8A-8AAF-B3178DFFD98F}|..\\ComputerStore.Application.Tests\\ComputerStore.Application.Tests.csproj|c:\\users\\boajangles\\source\\repos\\computerstore.application.tests\\services\\categoryservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F9BB6-3105-4D8A-8AAF-B3178DFFD98F}|..\\ComputerStore.Application.Tests\\ComputerStore.Application.Tests.csproj|c:\\users\\boajangles\\source\\repos\\computerstore.application.tests\\controller\\productscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9F9BB6-3105-4D8A-8AAF-B3178DFFD98F}|..\\ComputerStore.Application.Tests\\ComputerStore.Application.Tests.csproj|c:\\users\\boajangles\\source\\repos\\computerstore.application.tests\\services\\productservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Boajangles\\source\\repos\\ComputerStore.Application.Tests\\Services\\ProductServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\ComputerStore.Application.Tests\\Services\\ProductServiceTests.cs",
+              "ToolTip": "C:\\Users\\Boajangles\\source\\repos\\ComputerStore.Application.Tests\\Services\\ProductServiceTests.cs",
+              "RelativeToolTip": "..\\ComputerStore.Application.Tests\\Services\\ProductServiceTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T09:18:13.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Boajangles\\source\\repos\\ComputerStore.Application.Tests\\Services\\CategoryServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\ComputerStore.Application.Tests\\Services\\CategoryServiceTests.cs",
+              "ToolTip": "C:\\Users\\Boajangles\\source\\repos\\ComputerStore.Application.Tests\\Services\\CategoryServiceTests.cs",
+              "RelativeToolTip": "..\\ComputerStore.Application.Tests\\Services\\CategoryServiceTests.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAgwBEAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T09:18:01.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Boajangles\\source\\repos\\ComputerStore.Application.Tests\\Controller\\ProductsControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\ComputerStore.Application.Tests\\Controller\\ProductsControllerTests.cs",
+              "ToolTip": "C:\\Users\\Boajangles\\source\\repos\\ComputerStore.Application.Tests\\Controller\\ProductsControllerTests.cs",
+              "RelativeToolTip": "..\\ComputerStore.Application.Tests\\Controller\\ProductsControllerTests.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAuwJUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T09:17:48.142Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ using ComputerStore.Domain.Entities;
 using ComputerStore.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using ComputerStore.DTOs;
+using ComputerStore.DTOs.DTOs;
 
 public class ProductService : IProductService
 {
@@ -84,9 +85,11 @@ public class ProductService : IProductService
         return await _productRepository.FindByNameAsync(name);
     }
 
-    public async Task<decimal> CalculateDiscountAsync(List<BasketItemDto> basketItems)
+    public async Task<List<DiscountDetailDto>> CalculateDiscountAsync(List<BasketItemDto> basketItems)
     {
         decimal totalDiscount = 0;
+        var categoryDiscounts = new Dictionary<int, bool>();
+        var discountDetails = new List<DiscountDetailDto>();
 
         foreach (var item in basketItems)
         {
@@ -97,13 +100,24 @@ public class ProductService : IProductService
 
             if (product == null) continue;
 
-            if (product.ProductCategories.Any(pc => pc.Category.Name == "CPU") && item.Quantity >= 2)
+            foreach (var productCategory in product.ProductCategories)
             {
-                totalDiscount += product.Price * 0.05m;
+                var categoryId = productCategory.CategoryId;
+                if (item.Quantity >= 2 && !categoryDiscounts.ContainsKey(categoryId))
+                {
+                    var discount = product.Price * 0.05m;
+                    totalDiscount += discount;
+                    categoryDiscounts[categoryId] = true; // Mark this category as having received the discount
+                    discountDetails.Add(new DiscountDetailDto
+                    {
+                        ProductId = item.ProductId,
+                        Discount = discount
+                    });
+                }
             }
         }
 
-        return totalDiscount;
+        return discountDetails;
     }
 
     public async Task DeleteProductAsync(int productId)

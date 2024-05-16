@@ -102,33 +102,38 @@ namespace ComputerStore.Application.Tests.Services
             // Arrange
             ResetDatabase();
             var products = new List<Product>
-        {
-            new Product
             {
-                ProductId = 1,
-                Name = "Product 1",
-                Description = "Description 1", // Ensure required properties are set
-                Price = 100,
-                Quantity = 10,
-                ProductCategories = new List<ProductCategory>
+                new Product
                 {
-                    new ProductCategory { Category = new Category { Name = "CPU", Description = "Category Description" } }
+                    ProductId = 1,
+                    Name = "Product 1",
+                    Description = "Description 1", // Ensure required properties are set
+                    Price = 100,
+                    Quantity = 10,
+                    ProductCategories = new List<ProductCategory>
+                    {
+                        new ProductCategory { Category = new Category { Name = "CPU", Description = "Category Description" } }
+                    }
                 }
-            }
-        };
-            _dbContext.Products.AddRange(products);
-            await _dbContext.SaveChangesAsync();
+            };
+                    _dbContext.Products.AddRange(products);
+                    await _dbContext.SaveChangesAsync();
 
-            var basketItems = new List<BasketItemDto>
-        {
-            new BasketItemDto { ProductId = 1, Quantity = 2 }
-        };
+                    var basketItems = new List<BasketItemDto>
+                    {
+                        new BasketItemDto { ProductId = 1, Quantity = 2 }
+                    };
 
             // Act
             var result = await _productService.CalculateDiscountAsync(basketItems);
 
             // Assert
-            Assert.Equal(5, result); // 100 * 0.05
+            Assert.NotNull(result);
+            Assert.Single(result);
+            var discountDetail = result.First();
+            Assert.Equal(1, discountDetail.ProductId);
+            Assert.Equal(5, discountDetail.Discount); // 100 * 0.05
         }
+
     }
 }

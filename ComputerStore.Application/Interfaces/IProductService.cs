@@ -1,5 +1,6 @@
 ﻿using ComputerStore.Domain.Entities;
 using ComputerStore.DTOs;
+using ComputerStore.DTOs.DTOs;
 
 namespace ComputerStore.Application.Interfaces
 {
@@ -10,7 +11,7 @@ namespace ComputerStore.Application.Interfaces
         Task<List<Product>> GetProductsByIdsAsync(List<int> productIds);
         Task CreateProductAsync(Product product);
         Task UpdateProductAsync(Product product);
-        Task<decimal> CalculateDiscountAsync(List<BasketItemDto> basketItems);
+        Task<List<DiscountDetailDto>> CalculateDiscountAsync(List<BasketItemDto> basketItems);
         Task ClearDatabaseAsync();
         Task DeleteProductAsync(int productId);
         Task<Product> FindByNameAsync(string name);

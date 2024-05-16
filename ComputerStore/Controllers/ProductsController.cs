@@ -201,8 +201,8 @@ public class ProductsController : ControllerBase
     [HttpPost("calculate-discount")]
     public async Task<IActionResult> CalculateDiscount([FromBody] List<BasketItemDto> basketItems)
     {
-        var totalDiscount = await _productService.CalculateDiscountAsync(basketItems);
-        return Ok(new { totalDiscount });
+        var discountDetails = await _productService.CalculateDiscountAsync(basketItems);
+        return Ok(new { discountDetails });
     }
 
     [HttpPost("clear-database")]

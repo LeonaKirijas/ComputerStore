@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Moq;
 using ComputerStore.Infrastructure.Data;
+using ComputerStore.DTOs.DTOs;
 
 namespace ComputerStore.Application.Tests.Controller
 {
@@ -132,19 +133,26 @@ namespace ComputerStore.Application.Tests.Controller
         {
             // Arrange
             var basketItems = new List<BasketItemDto>
-        {
-            new BasketItemDto { ProductId = 1, Quantity = 2 }
-        };
-            var expectedDiscount = 10m;
-            _mockProductService.Setup(x => x.CalculateDiscountAsync(basketItems)).ReturnsAsync(expectedDiscount);
+            {
+                new BasketItemDto { ProductId = 1, Quantity = 2 }
+            };
+
+                    var discountDetails = new List<DiscountDetailDto>
+            {
+                new DiscountDetailDto { ProductId = 1, Discount = 10m }
+            };
+
+            _mockProductService.Setup(x => x.CalculateDiscountAsync(basketItems)).ReturnsAsync(discountDetails);
 
             // Act
             var result = await _productsController.CalculateDiscount(basketItems);
 
             // Assert
             var okResult = Assert.IsType<OkObjectResult>(result);
-            var value = okResult.Value.GetType().GetProperty("totalDiscount").GetValue(okResult.Value);
-            Assert.Equal(expectedDiscount, value);
+            var value = okResult.Value.GetType().GetProperty("discountDetails").GetValue(okResult.Value) as List<DiscountDetailDto>;
+            Assert.NotNull(value);
+            Assert.Equal(1, value.Count);
+            Assert.Equal(10m, value.First().Discount);
         }
     }
 }
